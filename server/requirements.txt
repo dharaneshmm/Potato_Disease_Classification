@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]  # The 'standard' extra includes essential dependencies for production use
+numpy
+pillow
+tensorflow

@@ -1,0 +1,180 @@
+/* App.css */
+
+/************ Custom Font ************/
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: transparent; /* Make the background transparent */
+  transition: background-color 0.3s ease;
+  position: fixed; /* Fixed position to keep it on top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to top */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black when scrolled */
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-nav .nav-link {
+  color: white; /* Change link color to white for better visibility on dark background */
+  font-size: medium;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8d210; /* Highlight color on hover */
+}
+
+.navbar h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center; /* Center align title */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%27http://www.w3.org/2000/svg%27 fill%3D%27%23ffffff%27 viewBox%3D%270 0 30 30%27%3E%3Cpath stroke%3D%27rgba%280%2C 0%2C 0%2C 0.5%29%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 stroke-width%3D%272%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .navbar h2 {
+    font-size: 1.2rem;
+  }
+}
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/img/bg.png') no-repeat center center/cover; /* Updated for plant disease theme */
+  text-align: center;
+  color: white;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.banner .txt-rotate .wrap {
+  border-right: 0.08em solid #fff;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+.banner button {
+  background-color: #f8d210;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Added border radius for a rounded button */
+}
+
+.banner button:hover {
+  background-color: #e8c210;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 10px; /* Added border radius for a rounded image */
+}
+
+/* PredictionPage.css */
+
+.prediction-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('./assets/img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.prediction-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    position: relative; /* To ensure proper positioning */
+    z-index: 1; /* To ensure container is above the background image */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.predict-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.predict-button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.prediction {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
